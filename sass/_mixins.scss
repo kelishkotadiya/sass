@@ -1,0 +1,44 @@
+/******************************
+        mixins
+******************************/
+
+@mixin border-box-stuff{
+    -webkit-box-sizing: inherit;
+    box-sizing: inherit;
+}
+@mixin bg-header-stuff{
+    content:"";
+    position:absolute;
+    bottom:-1rem;
+    height:1rem;
+    width:30%;
+    background-color: $dark-blue;
+}
+@mixin padding{
+    padding: 2rem 0;
+}
+@mixin width{
+    width: 100%;
+}
+
+@mixin small{
+    @media all and (min-width:701px) and (max-width:900px){
+        @content;
+    }
+}
+
+@mixin midium{
+    @media all and (min-width:901px) and (max-width: 1400px){
+        @content;
+    }
+}
+
+@mixin large{
+    @media all and (min-width:1401px){
+        @content;
+    }
+}
+
+@mixin column($percentage){
+    flex-basis: $percentage;
+}
