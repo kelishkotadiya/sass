@@ -1,10 +1,4 @@
 @charset "UTF-8";
-/******************************
-        variables
-******************************/
-/******************************
-        mixins
-******************************/
 * {
   padding: 0;
   margin: 0;
@@ -63,25 +57,29 @@ ul {
   right: 0;
 }
 
+.bg-footer, .bg-content1 {
+  background-color: #fff;
+}
+
+.bg-content2, .bg-content1 {
+  font-weight: 100;
+}
+
 .bg-focal {
   background-color: #C9A689;
   color: #7C593C;
 }
 
 .bg-content1 {
-  background-color: #fff;
   color: #222;
-  font-weight: 100;
 }
 
 .bg-content2 {
   background-color: #C7F7FF;
   color: #3a5E63;
-  font-weight: 100;
 }
 
 .bg-footer {
-  background-color: #fff;
   color: #d4d4d4;
 }
 
@@ -300,15 +298,17 @@ header h1 i.fa-lg ~ span {
 /***********************************************
                 FOOTER
 ***********************************************/
+footer p, footer h4 {
+  padding: 0.5rem 2rem;
+}
+
 footer h4 {
   font-size: 1.414rem;
-  padding: 0.5rem 2rem;
   color: #7C593C;
 }
 
 footer p {
   font-size: 1rem;
-  padding: 0.5rem 2rem;
   color: #222;
 }
 
