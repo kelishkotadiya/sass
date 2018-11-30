@@ -1,7 +1,3 @@
-/******************************
-        mixins
-******************************/
-
 @mixin border-box-stuff{
     -webkit-box-sizing: inherit;
     box-sizing: inherit;
@@ -27,7 +23,7 @@
     }
 }
 
-@mixin midium{
+@mixin medium{
     @media all and (min-width:901px) and (max-width: 1400px){
         @content;
     }
